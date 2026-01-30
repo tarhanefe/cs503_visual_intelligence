@@ -14,7 +14,7 @@ full-width: true
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: center;
+  align-items: left;
 }
 .project-card {
   display: flex;
