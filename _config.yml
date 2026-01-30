@@ -20,11 +20,9 @@ author: "EPFL VILAB"
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Selected Projects: "aboutme"
+  Logistics: "logistics"
+  VILAB: "https://vilab.epfl.ch"
 
 ################
 # --- Logo --- #
