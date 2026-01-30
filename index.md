@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "CS503 - Visual Intelligence"
-subtitle: Machines and Minds
+title: "CS503 Course Page"
+subtitle: "Visual Intelligence : Machines and Minds"
 ---
 
 ## Quick links
