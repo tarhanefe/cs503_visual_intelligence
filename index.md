@@ -5,7 +5,6 @@ subtitle: "Visual Intelligence : Machines and Minds"
 ---
 
 ## Quick links
-- **Announcements:** see below
 - **Schedule & materials:** [Schedule](#schedule)
 - **Assignments:** [Labs / Homeworks](#assignments)
 - **Project:** [Course project](#project)
@@ -16,37 +15,19 @@ subtitle: "Visual Intelligence : Machines and Minds"
 ---
 
 ## Announcements
-- **(Date)** Welcome to CS-433!
-- **(Date)** Assignment 1 released — due **(Date, time, timezone)**.
-- **(Date)** Project milestones posted.
-
+- **(Date)** Welcome to CS-503!
 > Add new announcements at the top.
-
----
-
-## Course description
-CS-433 introduces the foundations and practice of **machine learning**, covering core concepts (supervised learning, optimization, generalization) and modern methods (deep learning, representation learning), with a focus on both theory and hands-on implementation.
-
-### Learning outcomes
-By the end of the course, you should be able to:
-- formulate ML problems and choose appropriate models
-- train and evaluate models with solid experimental practice
-- understand generalization, regularization, and optimization basics
-- implement common ML pipelines in Python
 
 ---
 
 ## Staff
 ### Instructors
-- **(Name)** — (email) — (office hours link)
+- **Prof. Amir Zamir** 
 
 ### TAs
-- **(Name)** — (email)
-- **(Name)** — (email)
-
-### EAs
-- **(Name)** — (email)
-- **(Name)** — (email)
+- **Kunal Pratap Singh** 
+- **Rishubh Singh** 
+- **Jason Toskov**
 
 ### Office hours
 - **When/Where:** (day/time/location or Zoom)
@@ -160,10 +141,3 @@ A: Discuss concepts, but submit your own work. Cite collaborators.
 
 **Q: What about regrade requests?**  
 A: Submit within (X days) via (form/link), with a short justification.
-
----
-
-## Contact
-- **Staff email:** (address)
-- **Forum:** (link)
-- **Office hours:** (link/section above)
