@@ -14,9 +14,11 @@ full-width: true
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
 }
 .project-card {
-  display: block;
+  display: flex;
+  align-items: stretch;
   border-radius: 12px;
   overflow: hidden;
   background: #f8f9fb;
@@ -25,6 +27,8 @@ full-width: true
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   border: 1px solid transparent;
+  max-width: 860px;
+  width: 100%;
 }
 .project-card:hover, .project-card:focus {
   transform: translateY(-3px);
@@ -33,13 +37,15 @@ full-width: true
   outline: none;
 }
 .project-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+  width: 170px;
+  height: 130px;
+  object-fit: cover; /* crop to fixed size */
   display: block;
+  flex-shrink: 0;
 }
 .project-card .body {
   padding: 1rem 1.1rem 1.2rem;
+  flex: 1 1 auto;
 }
 .project-card h4 {
   margin: 0 0 0.35rem;
@@ -50,19 +56,27 @@ full-width: true
   color: #4a4f5a;
   font-size: 0.94rem;
 }
+
+@media (max-width: 640px) {
+  .project-card {
+    flex-direction: column;
+  }
+  .project-card img {
+    width: 100%;
+    height: 180px;
+  }
+}
 </style>
 
-> Use the `project-card` include below; provide `title`, `description`, `img`, and `link` for each entry.
-
-## 2024
+## 2025
 
 <div class="project-list">
   {% include project-card.html
-    title="Embodied Vision Agents"
-    description="Built a vision-language policy that grounds spatial instructions in 3D scenes, demonstrating robust navigation under noisy sensing."
-    img="/assets/img/projects/vision-agents.jpg"
-    alt="Vision agents project preview"
-    link="https://example.com/project-vision-agents"
+    title="From Pixels to Wireframes: 3D Reconstruction via CLIP-Based Sketch Abstraction"
+    description="This project explores extending sketch abstraction from 2D images to 3D representations by constructing wireframe-like structures using optimized Bézier curves and a constrained Gaussian splatting formulation. By limiting Gaussians to matte, single-color spherical blobs placed along curve paths, the approach yields compact, interpretable, and visually expressive 3D sketches that capture object structure effectively."
+    img="/assets/projects/clipasso3d.png"
+    alt="Preview"
+    link="https://tarhanefe.github.io/CLIPasso3DWebsite/"
   %}
   {% include project-card.html
     title="Robust Multimodal Retrieval"
@@ -71,16 +85,9 @@ full-width: true
     alt="Robust multimodal model preview"
     link="https://example.com/project-robust-multimodal"
   %}
-  {% include project-card.html
-    title="Few-Shot 3D Reconstruction"
-    description="Combined NeRF distillation with geometric priors to recover consistent meshes from as few as three posed images."
-    img="/assets/img/projects/3d-recon.jpg"
-    alt="3D reconstruction preview"
-    link="https://example.com/project-3d-recon"
-  %}
 </div>
 
-## 2023
+## 2024
 
 <div class="project-list">
   {% include project-card.html
@@ -96,5 +103,12 @@ full-width: true
     img="/assets/img/projects/human-motion.jpg"
     alt="Human motion synthesis preview"
     link="https://example.com/project-human-motion"
+  %}
+  {% include project-card.html
+    title="Few-Shot 3D Reconstruction"
+    description="Combined NeRF distillation with geometric priors to recover consistent meshes from as few as three posed images."
+    img="/assets/img/projects/3d-recon.jpg"
+    alt="3D reconstruction preview"
+    link="https://example.com/project-3d-recon"
   %}
 </div>
