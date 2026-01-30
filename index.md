@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "CS503 Course Page"
+title: "CS503 \n Course Page"
 subtitle: "Visual Intelligence : Machines and Minds"
 ---
 
